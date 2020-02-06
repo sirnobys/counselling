@@ -15,7 +15,7 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 
 
-<?php include '../assets/conn/register.php' ?>
+<?php include ('./test/server.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -111,7 +111,8 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
           <div class="card card-login">
-            <form class="form" method="POST" action="">
+            <form class="form" method="POST" action="signup.php">
+              <?php include('./test/errors.php')?>
               <div class="card-header card-header-primary text-center">
                 <h4 class="card-title">Sign Up</h4>
                 <div class="social-line">
@@ -126,7 +127,7 @@
                   </a>
                 </div>
               </div>
-              <p class="description text-center">Or Be Classical</p>
+              <!-- <p class="description text-center">Or Be Classical</p> -->
               <div class="card-body">
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -134,7 +135,7 @@
                       <i class="material-icons">face</i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" name="username" placeholder="Username...">
+                  <input type="text" class="form-control" name="username" placeholder="Username..." value="<?php echo $username; ?>">
                 </div>
 
                 <div class="input-group">
@@ -143,7 +144,7 @@
                       <i class="material-icons">mail</i>
                     </span>
                   </div>
-                  <input type="email" class="form-control" name="email" placeholder="Email...">
+                  <input type="email" class="form-control" name="email" placeholder="Email..." value="<?php echo $email; ?>">
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -151,24 +152,30 @@
                       <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-                  <input type="password" class="form-control" name="pass" placeholder="Password...">
+                  <input type="password" class="form-control" name="password_1" placeholder="Password...">
+                </div>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">lock_outline</i>
+                    </span>
+                  </div>
+                  <input type="password" class="form-control" name="password_2" placeholder="Confirm Password...">
                 </div>
                 <div class="input-group">
                  <div style="color:red">
 
-            <?php if (!empty($error)) {
-            # code...
-            echo ( "<h6 class='ml-2' style='color:red;'>$error</h6>");
-          } else{
-              echo " ";
-            }?> 
+            
           </div>
               </div>
-              <div class="" align="center">
+              <div class="input group" align="center">
                 
-                  <input type="submit"  class="btn btn-primary btn-link btn-wd btn-lg" name="register">
-               
+                  <button type="submit"  class="btn btn-primary btn-link btn-wd btn-lg" name="reg_user">Register</button>
+                  <p>
+  		Already a member? <a href="login.php">Sign in</a>
+  	</p>      
               </div>
+         
             </form>
           </div>
         </div>

@@ -14,7 +14,7 @@
 
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 
-<?php include '../assets/conn/login.php' ?>
+<?php include ('./test/server.php') ?>
 
 
 <!DOCTYPE html>
@@ -53,18 +53,10 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">apps</i> Home
+        <li class="nav-item">
+            <a class="nav-link" href="index.php" onclick="scrollToDownload()">
+              <i class="material-icons"></i> Home
             </a>
-            <div class="dropdown-menu dropdown-with-icons">
-              <a href="../index.html" class="dropdown-item">
-                <i class="material-icons">layers</i> All Components
-              </a>
-              <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" class="dropdown-item">
-                <i class="material-icons">content_paste</i> Documentation
-              </a>
-            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
@@ -103,7 +95,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
           <div class="card card-login">
-            <form class="form" method="POST" action="">
+            <form class="form" method="POST" action="login.php">
               <div class="card-header card-header-primary text-center">
                 <h4 class="card-title">Sign In</h4>
                 <div class="social-line">
@@ -118,7 +110,7 @@
                   </a>
                 </div>
               </div>
-              <p class="description text-center">Or Be Classical</p>
+              <!-- <p class="description text-center">Or Be Classical</p> -->
               <div class="card-body">
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -126,7 +118,7 @@
                       <i class="material-icons">face</i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" name="Username" placeholder="Username...">
+                  <input type="text" class="form-control" name="username" placeholder="Username...">
                 </div>
 
                 
@@ -136,15 +128,18 @@
                       <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-                  <input type="password" class="form-control" name="pass" placeholder="Password...">
+                  <input type="password" class="form-control" name="password" placeholder="Password...">
                 </div>
                 
               </div>
               <div class="" align="center">
                 
-                  <input type="submit"  class="btn btn-primary btn-link btn-wd btn-lg" name="login" value="Sign In">
-               
+                  <input type="submit"  class="btn btn-primary btn-link btn-wd btn-lg" name="login_user" value="Sign In">
+                  <p>
+  		Not yet a member? <a href="register.php">Sign up</a>
+  	</p>
               </div>
+              
             </form>
           </div>
         </div>

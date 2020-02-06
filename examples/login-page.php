@@ -125,7 +125,7 @@
                       <i class="material-icons">face</i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" name="Username" placeholder="Username...">
+                  <input type="text" class="form-control" name="username" placeholder="Username..." value=<?php echo $username; ?> >
                 </div>
 
                 <div class="input-group">
@@ -134,7 +134,7 @@
                       <i class="material-icons">mail</i>
                     </span>
                   </div>
-                  <input type="email" class="form-control" name="email" placeholder="Email...">
+                  <input type="email" class="form-control" name="email" placeholder="email..." value=<?php echo $email; ?> >
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
