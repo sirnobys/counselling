@@ -48,10 +48,10 @@
 
 <body class="login-page sidebar-collapse">
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
-    <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          Online Counselling </a>
+  <div class="container row">
+      <div class="navbar-translate col-md-5">
+        <a style="font-size: 16px;" class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
+          Praiseword Online Counselling and Psychological Services Centre</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -59,47 +59,64 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse col-md-9">
         <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.php" onclick="scrollToDownload()">
+              <i class="material-icons"></i> Home
+            </a>
+          </li>
+          
           <li class="dropdown nav-item">
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">apps</i> Home
+              <i class="material-icons"></i>Publication
             </a>
             <div class="dropdown-menu dropdown-with-icons">
-              <a href="../index.html" class="dropdown-item">
-                <i class="material-icons">layers</i> All Components
+              <a href="publication.php" class="dropdown-item">
+                <i class="material-icons"></i> Research Articles
               </a>
-              <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" class="dropdown-item">
-                <i class="material-icons">content_paste</i> Documentation
+              <a href="publication.php" class="dropdown-item">
+                <i class="material-icons"></i> Ebooks
+              </a>
+              <a href="publication.php" class="dropdown-item">
+                <i class="material-icons"></i> Impact Stories
               </a>
             </div>
           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="profile-page.php" onclick="scrollToDownload()">
+               Partners
+            </a>
+          </li>
+         <li class="dropdown nav-item">
+              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="material-icons"></i> About Us
+              </a>
+              <div class="dropdown-menu dropdown-with-icons">
+               <!--  <a href="profile-page.php" class="dropdown-item">
+                  <i class="material-icons"></i> The Team
+                </a> -->
+                <a href="" class="dropdown-item">
+                  <i class="material-icons"></i> Mission & Vision
+                </a>
+
+                 <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" class="dropdown-item">
+                  <i class="material-icons"></i> Projects & Outreaches
+                </a>
+              </div>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-               Contact
-            </a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-               Materials
-            </a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-               The Counsellor
-            </a>
-          </li>
-         <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-              About
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.php" onclick="scrollToDownload()">
-              <i class="material-icons"></i> Sign In
+               Donate
             </a>
           </li>
            
+            <li class="nav-item">
+             <a class="nav-link" href="login.php" onclick="scrollToDownload()">
+              <i class="fa fa-sign-in"></i> Login
+            </a>
+          </li>
           
         </ul>
       </div>
@@ -135,7 +152,7 @@
                       <i class="material-icons">face</i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" name="username" placeholder="Username..." value="<?php echo $username; ?>">
+                  <input type="text" class="form-control" required name="username" placeholder="Username..." value="<?php echo $username; ?>">
                 </div>
 
                 <div class="input-group">
@@ -144,7 +161,7 @@
                       <i class="material-icons">mail</i>
                     </span>
                   </div>
-                  <input type="email" class="form-control" name="email" placeholder="Email..." value="<?php echo $email; ?>">
+                  <input type="email" class="form-control" required name="email" placeholder="Email..." value="<?php echo $email; ?>">
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -152,7 +169,7 @@
                       <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-                  <input type="password" class="form-control" name="password_1" placeholder="Password...">
+                  <input type="password" class="form-control"  required name="password_1" placeholder="Password...">
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -160,14 +177,9 @@
                       <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-                  <input type="password" class="form-control" name="password_2" placeholder="Confirm Password...">
+                  <input type="password" class="form-control"  required  name="password_2" placeholder="Confirm Password...">
                 </div>
-                <div class="input-group">
-                 <div style="color:red">
-
-            
-          </div>
-              </div>
+                
               <div class="input group" align="center">
                 
                   <button type="submit"  class="btn btn-primary btn-link btn-wd btn-lg" name="reg_user">Register</button>
@@ -231,14 +243,13 @@
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
 
-
-  <!--Start of Tawk.to Script-->
+<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-s1.src='https://embed.tawk.to/5e38295a298c395d1ce5f20e/default';
+s1.src='https://embed.tawk.to/5e404033a89cda5a1884fd34/default';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);

@@ -1,151 +1,298 @@
-<!--
- =========================================================
- * Material Kit - v2.0.6
- =========================================================
+<?php include 'navlink.php'; ?>
 
- * Product Page: https://www.creative-tim.com/product/material-kit
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+<?php  if (!isset($_SESSION['username'])): ?>
 
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-
- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Online Counselling | Login Page
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
-  <link href="../assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../assets/demo/demo.css" rel="stylesheet" />
-</head>
-
-<body class="login-page sidebar-collapse">
-  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
-    <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          Online Counselling </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="index.php" onclick="scrollToDownload()">
-              <i class="material-icons"></i> Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-               Contact
-            </a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-               Materials
-            </a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-               The Counsellor
-            </a>
-          </li>
-         <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-              About
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="signup.php" onclick="scrollToDownload()">
-              <i class="material-icons"></i> Sign Up
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.php" onclick="scrollToDownload()">
-              <i class="material-icons"></i> Sign In
-            </a>
-          </li>
-           
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('../assets/img/profile_city.jpg')">
+  <div class="page-header header-filter bg1"  data-parallax="true" >
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h1 class="title">Your Story Starts With Us.</h1>
-          <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this text here. Add here all the information that can make you or your product create the first impression.</h4>
+        <div class="col-md-9">
+          <h3 class="title text-info">Welcome to</h3>
+          <h1 class="title"> Praiseword Online Counselling and Psychological Services Centre</h1>
+          
           <br>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
-            <i class="fa fa-play"></i> Watch video
+           <a href="signup.php"  class="btn btn-primary btn-raised btn-lg">
+          I want to create an account
+          </a>
+           <a href="login.php"  class="btn btn-success btn-raised btn-lg">
+          I already have an account
           </a>
         </div>
       </div>
     </div>
+
+
+
   </div>
- 
-  <footer class="footer footer-default">
+
+  <div class="main main-raised">
     <div class="container">
-      <nav class="float-left">
-        <ul>
-          <li>
-            <a href="https://www.brandmanifold.com">
-              Brand Manifold
-            </a>
-          </li>
-          <li>
-            <a href="">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Licenses
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="content">
- 	
-      <div class="copyright float-right">
-        &copy;
-        <script>
-          document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://brandmanifold.com" target="_blank">Brand Manifold</a> for a better web.
+      <div class="section text-center">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="title">We Are Here For You</h2>
+            <h5 class="btn-success">Need to talk? Look no further! We are online 24/7</h5>
+          </div>
+        </div>
+        <div class="features">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-info">
+                  <i class="material-icons">chat</i>
+                </div>
+                <h4 class="info-title btn-info text-white">Free Chat</h4>
+                <p class="text-dark">Chat with our friendly counsellors by using the chat button on the right bottom corner of the screen to reach us. We reply within the shortest possible time after we get your message</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-success">
+                  <i class="material-icons">verified_user</i>
+                </div>
+                <h4 class="info-title btn-success text-white">We are Professionals</h4>
+                <p class="text-dark">We offer free, safe and anonymous counselling and support. Helping you is the priority!</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-danger">
+                  <i class="material-icons">content_paste</i>
+                </div>
+                <h4 class="info-title btn-danger text-white">Read Articles</h4>
+                <p class="text-dark">Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-info">
+                  <i class="material-icons">cloud_download</i>
+                </div>
+                <h4 class="info-title btn-info text-white">Download Free Important Resources</h4>
+                <p class="text-dark">Get free videos, documents and links useful publications on to your devices as reference or guide.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-success">
+                  <i class="material-icons">chrome_reader_mode</i>
+                </div>
+                <h4 class="info-title btn-success text-white">Read Impact Stories</h4>
+                <p class="text-dark">Read impact stories shared by clients about how our services have shaped their lives for the better.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info mt-2">
+                <div class="icon icon-danger">
+                  <i class="fa fa-book"></i>
+                </div>
+                <h4 class="info-title btn-danger text-white">Ebooks</h4>
+                <p class="text-dark">Ebooks are provided for clients as a guide. These are well reviewed publications recommended by professionals and certified people and so clients can trust. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     <!--  <div class="section section-contacts">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="text-center title">Work with us</h2>
+            <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
+            <form class="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Your Name</label>
+                    <input type="email" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Your Email</label>
+                    <input type="email" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
+                <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+              </div>
+              <div class="row">
+                <div class="col-md-4 ml-auto mr-auto text-center">
+                  <button class="btn btn-primary btn-raised">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+
+
+
+<?php else: ?>
+
+<div class="content">
+    <!-- notification message -->
+    <?php if (isset($_SESSION['success'])) : ?>
+      <div class="error success" >
+        
+
+          <?php 
+           echo("<script>alert('Login successful')</script>");
+            $_SESSION['success']; 
+            unset($_SESSION['success']);
+          ?>
+        
+      </div>
+    <?php endif ?>
+
+    <!-- logged in user information -->
+    
+</div>
+
+
+
+  <div class="page-header header-filter bg4" data-parallax="true" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="title text-success">Congratulations Buddy! Welcome to the family.</h1>
+          <h4></h4>
+          <br>
+         <!--  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
+            <i class="fa fa-play"></i> Watch video
+          </a> -->
+        </div>
       </div>
     </div>
-  </footer>
-  <!--   Core JS Files   -->
-  <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="../assets/js/plugins/moment.min.js"></script>
+  </div>
+
+
+   <div class="main main-raised">
+    <div class="container">
+      <div class="section text-center">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="title">We Are Here For You</h2>
+            <h5 class="btn-success">Need to talk? Look no further! We are online 24/7</h5>
+          </div>
+        </div>
+        <div class="features">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-info">
+                  <i class="material-icons">chat</i>
+                </div>
+                <h4 class="info-title btn-info text-white">Free Chat</h4>
+                <p class="text-dark">Chat with our friendly counsellors by using the chat button on the right bottom corner of the screen to reach us. We reply within the shortest possible time after we get your message</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-success">
+                  <i class="material-icons">verified_user</i>
+                </div>
+                <h4 class="info-title btn-success text-white">We are Professionals</h4>
+                <p class="text-dark">We offer free, safe and anonymous counselling and support. Helping you is the priority!</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-danger">
+                  <i class="material-icons">content_paste</i>
+                </div>
+                <h4 class="info-title btn-danger text-white">Read Articles</h4>
+                <p class="text-dark">Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-info">
+                  <i class="material-icons">cloud_download</i>
+                </div>
+                <h4 class="info-title btn-info text-white">Download Free Important Resources</h4>
+                <p class="text-dark">Get free videos, documents and links useful publications on to your devices as reference or guide.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-success">
+                  <i class="material-icons">chrome_reader_mode</i>
+                </div>
+                <h4 class="info-title btn-success text-white">Read Impact Stories</h4>
+                <p class="text-dark">Read impact stories shared by clients about how our services have shaped their lives for the better.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info mt-2">
+                <div class="icon icon-danger">
+                  <i class="fa fa-book"></i>
+                </div>
+                <h4 class="info-title btn-danger text-white">Ebooks</h4>
+                <p class="text-dark">Ebooks are provided for clients as a guide. These are well reviewed publications recommended by professionals and certified people and so clients can trust. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     
+    </div>
+  </div>
+
+
+
+      <div class="section section-contacts">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="text-center title">Work with us</h2>
+            <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
+            <form class="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Your Name</label>
+                    <input type="email" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Your Email</label>
+                    <input type="email" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
+                <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+              </div>
+              <div class="row">
+                <div class="col-md-4 ml-auto mr-auto text-center">
+                  <button class="btn btn-primary btn-raised">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<?php endif; ?>
+<?php include 'footer.php'; ?>
+<!--   Core JS Files   -->
+
 </body>
 
 </html>

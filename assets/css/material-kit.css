@@ -16501,6 +16501,10 @@ footer .pull-center {
   color: #fff;
 }
 
+.profile .avatar{
+  margin-top: 120px;
+}
+
 .card .author .avatar {
   width: 30px;
   height: 30px;
@@ -18062,5 +18066,53 @@ footer .pull-center {
     width: 245px;
   }
 }
+
+
+.bg1{
+ 
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('../img/6.jpg'); /* The least supported option. */
+    background-size: cover;
+      background-position: top;
+
+
+
+}
+
+
+.bg2{   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/1.jpg'); /* The least supported option. */
+    background-size: cover;
+
+  }
+
+.bg3{
+     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../img/11.jpg'); /* The least supported option. */
+    background-size: cover;
+}
+
+.bg4{
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/12.jpg'); /* The least supported option. */
+    background-size: cover;
+    background-position: top;
+}
+
+.bg5{
+     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('../img/9.jpg'); /* The least supported option. */
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+.bg6{
+     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('../img/10.jpg'); /* The least supported option. */
+    background-size: cover;
+  
+}
+
+
+
+
+
+
 
 /*# sourceMappingURL=kit-free.css.map */

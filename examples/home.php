@@ -11,22 +11,38 @@
  =========================================================
 
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<?php 
+  session_start(); 
 
-
-<? php
-session_start(); 
-
-if (!isset($_SESSION['username'])) {
-  $_SESSION['msg'] = "You must log in first";
-  header('location: login.php');
-}
-if (isset($_GET['logout'])) {
-  session_destroy();
-  unset($_SESSION['username']);
-  header("location: login.php");
-}
-
+  if (!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "You must log in first";
+    header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: login.php");
+  }
 ?>
+
+<div class="content">
+    <!-- notification message -->
+    <?php if (isset($_SESSION['success'])) : ?>
+      <div class="error success" >
+        
+
+          <?php 
+           echo("<script>alert('Login successful')</script>");
+            $_SESSION['success']; 
+            unset($_SESSION['success']);
+          ?>
+        
+      </div>
+    <?php endif ?>
+
+    <!-- logged in user information -->
+    
+</div>
  <!DOCTYPE html>
 <html lang="en">
 
@@ -52,8 +68,8 @@ if (isset($_GET['logout'])) {
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          Online Counselling </a>
+      <a style="font-size: 16px;" class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
+          Praiseword Online Counselling and Psychological Services Centre</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -87,7 +103,7 @@ if (isset($_GET['logout'])) {
             </a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+            <a class="nav-link" href="profile-page.php" onclick="scrollToDownload()">
                The Counsellor
             </a>
           </li>
@@ -96,23 +112,44 @@ if (isset($_GET['logout'])) {
               About
             </a>
           </li>
-           <li class="nav-item">
-            <a class="nav-link" href="login.php?logout='1'" >
-              <i class="material-icons"></i>Logout
+
+
+
+
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+
+                  
+    
+                 <?php  if (isset($_SESSION['username'])) : ?>
+              Hello!   &nbsp;<strong><?php echo $_SESSION['username']; ?></strong>
+              <?php endif ?>
+        
             </a>
-          </li> 
-          
+            <div class="dropdown-menu dropdown-with-icons">
+              <?php  if (isset($_SESSION['username'])) : ?>
+       <a class="nav-link" href="profile.php?logout='1'" >logout</a>
+    <?php endif ?>
+              
+            </div>
+          </li>
+
+
+
+    
           
         </ul>
       </div>
     </div>
   </nav>
+
+
   <div class="page-header header-filter" data-parallax="true" style="background-image: url('../assets/img/profile_city.jpg')">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h1 class="title">Your Story Starts With Us.</h1>
-          <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this text here. Add here all the information that can make you or your product create the first impression.</h4>
+        <div class="col-md-8">
+          <h1 class="title">Congratulations! You've found us</h1>
+          <h4></h4>
           <br>
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
             <i class="fa fa-play"></i> Watch video
@@ -271,7 +308,7 @@ if (isset($_GET['logout'])) {
       </div>
     </div>
   </div>
-  <footer class="footer footer-default">
+  <footer class="header footer-default">
     <div class="container">
       <nav class="float-left">
         <ul>
@@ -299,24 +336,7 @@ if (isset($_GET['logout'])) {
       </nav>
       <div class="content">
   	<!-- notification message -->
-  	<?php if (isset($_SESSION['success'])) : ?>
-      <div class="error success" >
-      	<h3>
-          <?php 
-          	echo $_SESSION['success']; 
-          	unset($_SESSION['success']);
-          ?>
-      	</h3>
-      </div>
-  	<?php endif ?>
-
-    <!-- logged in user information -->
-    <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="home.php?logout='1'" style="color: red;">logout</a> </p>
-    <?php endif ?>
-</div>
-		
+ 
       <div class="copyright float-right">
         &copy;
         <script>
@@ -339,6 +359,20 @@ if (isset($_GET['logout'])) {
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e404033a89cda5a1884fd34/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 
 </html>

@@ -40,10 +40,10 @@
 
 <body class="login-page sidebar-collapse">
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
-    <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          Online Counselling </a>
+  <div class="container row">
+      <div class="navbar-translate col-md-5">
+        <a style="font-size: 16px;" class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
+          Praiseword Online Counselling and Psychological Services Centre</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -51,39 +51,64 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse col-md-9">
         <ul class="navbar-nav ml-auto">
         <li class="nav-item">
             <a class="nav-link" href="index.php" onclick="scrollToDownload()">
               <i class="material-icons"></i> Home
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-               Contact
+          
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons"></i>Publication
             </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a href="publication.php" class="dropdown-item">
+                <i class="material-icons"></i> Research Articles
+              </a>
+              <a href="publication.php" class="dropdown-item">
+                <i class="material-icons"></i> Ebooks
+              </a>
+              <a href="publication.php" class="dropdown-item">
+                <i class="material-icons"></i> Impact Stories
+              </a>
+            </div>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-               Materials
+            <a class="nav-link" href="profile-page.php" onclick="scrollToDownload()">
+               Partners
             </a>
           </li>
-           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-               The Counsellor
-            </a>
+         <li class="dropdown nav-item">
+              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="material-icons"></i> About Us
+              </a>
+              <div class="dropdown-menu dropdown-with-icons">
+                <a href="publication.php" class="dropdown-item">
+                  <i class="material-icons"></i> The Team
+                </a>
+                <a href="publication.php" class="dropdown-item">
+                  <i class="material-icons"></i> Mission & Vision
+                </a>
+
+                 <a href="publication.php" class="dropdown-item">
+                  <i class="material-icons"></i> Projects & Outreaches
+                </a>
+              </div>
           </li>
-         <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-              About
-            </a>
-          </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="signup.php" onclick="scrollToDownload()">
-              <i class="material-icons"></i> Sign Up
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+               Donate
             </a>
           </li>
            
+            <li class="nav-item">
+            <a class="nav-link" href="signup.php" onclick="scrollToDownload()">
+              <i class="fa fa-user-plus"></i> Sign Up
+            </a>
+          </li>
           
         </ul>
       </div>
@@ -96,8 +121,9 @@
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
           <div class="card card-login">
             <form class="form" method="POST" action="login.php">
+               <?php include('./test/errors.php')?>
               <div class="card-header card-header-primary text-center">
-                <h4 class="card-title">Sign In</h4>
+                <h4 class="card-title">Login</h4>
                 <div class="social-line">
                   <a href="#pablo" class="btn btn-just-icon btn-link">
                     <i class="fa fa-facebook-square"></i>
@@ -196,13 +222,13 @@
   <script src="../assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
 
 
-  <!--Start of Tawk.to Script-->
+ <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-s1.src='https://embed.tawk.to/5e38295a298c395d1ce5f20e/default';
+s1.src='https://embed.tawk.to/5e404033a89cda5a1884fd34/default';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
