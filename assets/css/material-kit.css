@@ -18104,7 +18104,7 @@ footer .pull-center {
 
 
 .bg6{
-     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('../img/10.jpg'); /* The least supported option. */
+     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/13.jpg'); /* The least supported option. */
     background-size: cover;
   
 }

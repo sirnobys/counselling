@@ -11,7 +11,18 @@
  =========================================================
 
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+ <!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/3.jpeg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+ Praiseword Online | Publication
+  </title>
 
 <?php include 'navlink.php'; ?>
 
@@ -52,6 +63,106 @@
         <!-- <div class="description text-center">
           <p>An artist of considerable range, Chet Faker &#x2014; the name taken by Melbourne-raised, Brooklyn-based Nick Murphy &#x2014; writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
         </div> -->
+
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto">
+            <div class="profile-tabs">
+              <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#article" role="tab" data-toggle="tab">
+                    <i class="material-icons">content_paste</i> Articles
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#ebooks" role="tab" data-toggle="tab">
+                  <i class="fa fa-book"></i> E-books
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#stories" role="tab" data-toggle="tab">
+                    <i class="material-icons">supervised_user_circle</i> Stories
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+         <div class="tab-content tab-space">
+          <div class="tab-pane active text-center gallery" id="article">
+            
+              <div class="row">
+               <div class="col-md-6 ml-auto mr-auto">
+                 <div class="card">
+                  <span class=" h4 title">Free psychotherapy books</span>
+                   <a href="https://www.freepsychotherapybooks.org/?dlm_download_category=all-books" class="btn btn-lg btn-primary" target="_blank">
+                     
+                  Visit Link
+                   </a>
+                 
+                </div>
+              </div>
+
+              <div class="col-md-6 ml-auto mr-auto">
+                <!-- <img src="../assets/img/examples/mariya-georgieva.jpg" class="rounded">
+                <img src="../assets/img/examples/studio-3.jpg" class="rounded"> -->
+                <div class="card">
+                  <span class=" h4 title">Free psychotherapy books</span>
+                   <a href="https://www.freepsychotherapybooks.org/?dlm_download_category=all-books" class="btn btn-lg btn-primary" target="_blank">
+                     
+                  Visit Link
+                   </a>
+                 
+                </div>
+              </div>
+
+                </div>
+          </div>
+          <div class="tab-pane text-center gallery" id="ebooks">
+            <div class="row">
+               <div class="col-md-6 ml-auto mr-auto">
+                <!-- <img src="../assets/img/examples/mariya-georgieva.jpg" class="rounded">
+                <img src="../assets/img/examples/studio-3.jpg" class="rounded"> -->
+                <div class="card">
+                  <span class=" h4 title">Free Self-help Ebooks and Emotional Health Articles</span>
+                  <div class="text-dark">
+                  
+                  </div>
+                 <a href="https://www.onlinecounsellingservice.co.uk/free-self-help-books" class="btn btn-lg btn-primary" target="_blank"> visit link </a>
+                </div>
+              </div>
+
+               <div class="col-md-6 ml-auto mr-auto">
+                <!-- <img src="../assets/img/examples/mariya-georgieva.jpg" class="rounded">
+                <img src="../assets/img/examples/studio-3.jpg" class="rounded"> -->
+                <div class="card">
+                  <span class=" h4 title">Book Donation Initiative</span>
+                  <div class="text-dark">
+                  
+                  </div>
+                 <a href="https://publishers.org/our-markets/trade/book-donation-initiative" class="btn btn-lg btn-primary" target="_blank"> visit link </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane text-center gallery" id="stories">
+            <div class="row">
+             <div class="col-md-6 ml-auto mr-auto">
+                
+                <div class="card">
+                 
+                  <div class="text-danger">
+                 <h3>Pending stories...
+                  </div></h3> 
+              
+                </div>
+              </div>
+          </div>
+        </div>
+
+       <!--  
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto">
             <div class="profile-tabs">
@@ -78,81 +189,16 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="tab-content tab-space">
-          <div class="tab-pane active text-center gallery" id="ebook">
-            <div class="row">
-             <!-- <iframe src="https://drive.google.com/embeddedfolderview?id=12owX76B9_GUVHhUnX_cQT-ytalp6vQQ2" width="100%" height="500" frameborder="0"></iframe> -->
-
-             <div class="col-md-6 ml-auto mr-auto">
-                <!-- <img src="../assets/img/examples/mariya-georgieva.jpg" class="rounded">
-                <img src="../assets/img/examples/studio-3.jpg" class="rounded"> -->
-                <div class="card">
-                  <span class=" h4 title">Free psychotherapy books</span>
-                   <a href="https://www.freepsychotherapybooks.org/?dlm_download_category=all-books" class="btn btn-lg btn-primary" target="_blank">
-                     
-                  Visit Link
-                   </a>
-                 
-                </div>
-              </div>
-
-              <div class="col-md-6 ml-auto mr-auto">
-                <!-- <img src="../assets/img/examples/mariya-georgieva.jpg" class="rounded">
-                <img src="../assets/img/examples/studio-3.jpg" class="rounded"> -->
-                <div class="card">
-                  <span class=" h4 title">Free psychotherapy books</span>
-                   <a href="https://www.freepsychotherapybooks.org/?dlm_download_category=all-books" class="btn btn-lg btn-primary" target="_blank">
-                     
-                  Visit Link
-                   </a>
-                 
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="tab-pane text-center gallery" id="stories">
-            <div class="row">
-              <div class="col-md-3 ml-auto">
-              
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane text-center gallery" id="articles">
-            <div class="row">
-              <div class="col-md-6 ml-auto mr-auto">
-                <!-- <img src="../assets/img/examples/mariya-georgieva.jpg" class="rounded">
-                <img src="../assets/img/examples/studio-3.jpg" class="rounded"> -->
-                <div class="card">
-                  <span class=" h4 title">Free Self-help Ebooks and Emotional Health Articles</span>
-                  <div class="text-dark">
-                  
-                  </div>
-                 <a href="https://www.onlinecounsellingservice.co.uk/free-self-help-books" class="btn btn-lg btn-primary" target="_blank"> visit link </a>
-                </div>
-              </div>
-
-               <div class="col-md-6 ml-auto mr-auto">
-                <!-- <img src="../assets/img/examples/mariya-georgieva.jpg" class="rounded">
-                <img src="../assets/img/examples/studio-3.jpg" class="rounded"> -->
-                <div class="card">
-                  <span class=" h4 title">Book Donation Initiative</span>
-                  <div class="text-dark">
-                  
-                  </div>
-                 <a href="https://publishers.org/our-markets/trade/book-donation-initiative" class="btn btn-lg btn-primary" target="_blank"> visit link </a>
-                </div>
-              </div>
-
+        </div> -->
+        
               
 
-              <!-- <div class="col-md-3 mr-auto">
+             <!--  <div class="col-md-3 mr-auto">
                 <img src="../assets/img/examples/clem-onojeghuo.jpg" class="rounded">
                 <img src="../assets/img/examples/olu-eletu.jpg" class="rounded">
                 <img src="../assets/img/examples/studio-1.jpg" class="rounded">
               </div> -->
+              </div>
             </div>
           </div>
         </div>

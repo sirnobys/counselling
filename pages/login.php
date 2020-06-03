@@ -23,10 +23,10 @@
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="../assets/img/3.jpeg">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Online Counselling | Login Page
+    Praiseword Online | Login
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -42,8 +42,8 @@
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
   <div class="container row">
       <div class="navbar-translate col-md-5">
-        <a style="font-size: 16px;" class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          Praiseword Online Counselling and Psychological Services Centre</a>
+        <a style="font-size: 16px;" class="navbar-brand" href="index.php">
+          PWO Counselling and Psychological Services Centre</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@
             </div>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="profile-page.php" onclick="scrollToDownload()">
+            <a class="nav-link" href="" onclick="scrollToDownload()">
                Partners
             </a>
           </li>
@@ -98,11 +98,11 @@
               </div>
           </li>
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
                Donate
             </a>
-          </li>
+          </li> -->
            
             <li class="nav-item">
             <a class="nav-link" href="signup.php" onclick="scrollToDownload()">
@@ -115,7 +115,7 @@
     </div>
   </nav>
 
-  <div class="page-header header-filter" style="background-image: url('../assets/img/bg7.jpg'); background-size: cover; background-position: top center;">
+  <div class="page-header header-filter" style="background-image: url('../assets/img/1.jpg'); background-size: cover; background-position: top center;">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
@@ -123,8 +123,9 @@
             <form class="form" method="POST" action="login.php">
                <?php include('./test/errors.php')?>
               <div class="card-header card-header-primary text-center">
-                <h4 class="card-title">Login</h4>
-                <div class="social-line">
+                <h2 class="card-title mb-3">Login</h2>
+
+               <!--  <div class="social-line">
                   <a href="#pablo" class="btn btn-just-icon btn-link">
                     <i class="fa fa-facebook-square"></i>
                   </a>
@@ -134,9 +135,10 @@
                   <a href="#pablo" class="btn btn-just-icon btn-link">
                     <i class="fa fa-google-plus"></i>
                   </a>
-                </div>
+                </div> -->
               </div>
               <!-- <p class="description text-center">Or Be Classical</p> -->
+              <div class="mb-5"></div>
               <div class="card-body">
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -158,7 +160,7 @@
                 </div>
                 
               </div>
-              <div class="" align="center">
+              <div class="mt-3" align="center">
                 
                   <input type="submit"  class="btn btn-primary btn-link btn-wd btn-lg" name="login_user" value="Sign In">
                   <p>

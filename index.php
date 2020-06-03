@@ -1,3 +1,15 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/3.jpeg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+ Praiseword Online Counselling and Psychological Services Centre
+  </title>
 <?php include 'navlink.php'; ?>
 
 <?php  if (!isset($_SESSION['username'])): ?>
@@ -10,10 +22,10 @@
           <h1 class="title"> Praiseword Online Counselling and Psychological Services Centre</h1>
           
           <br>
-           <a href="signup.php"  class="btn btn-primary btn-raised btn-lg">
+           <a href="pages/signup.php"  class="btn btn-primary btn-raised btn-lg">
           I want to create an account
           </a>
-           <a href="login.php"  class="btn btn-success btn-raised btn-lg">
+           <a href="pages/login.php"  class="btn btn-success btn-raised btn-lg">
           I already have an account
           </a>
         </div>
@@ -134,6 +146,109 @@
 
 
 
+<div class="row mt-4"></div>
+
+<div class="card card-nav-tabs text-center">
+  <div class="card-header card-header-primary">
+   <span><h3 class="card-title">What We Offer</h3></span> 
+  </div>
+  <div class="card-body">
+    <p class="h4">Here are just some of the services we offer at Praiseword Online Counselling & Psychological Services Centre </p>
+
+<div class="row container-fluid mr-auto ml-auto mt-5">
+  
+ <div class="card card-nav-tabs col-md-4 mr-auto ml-auto" >
+      <div class=" h5 card-header card-header-info">
+       Marriage & Relationship Issues
+      </div>
+      <span>
+        Do you want to establish more trust? Heighten your communication? Heal from infidelity?Do you anticipate more spark in the bedroom? We are couple therapy specialists. We provide effective Counseling for your marriage.
+      </span>
+        
+ </div>
+
+ 
+
+<div class="card card-nav-tabs col-md-4 mr-auto ml-auto">
+      <div class="h5 card-header card-header-info">
+       Premarital Counseling
+      </div>
+      <span>
+      Secure a marriage that is divorce-resistant! Build a stable foundation for a lifetime and make sure you have what it takes to have a successful relationship.
+      </span>
+ </div>
+
+ <div class="card card-nav-tabs col-md-4 mr-auto ml-auto">
+      <div class="h5 card-header card-header-info">
+       Addiction
+      </div>
+      <span>
+        Find support for your recovery from drug and alcohol addiction with our experienced substance abuse counselors. Is love addiction or internet addiction wrecking havoc in your relationship? Do you want relief from food addiction or emotional eating? Do you have compulsions that seem resistant to change? We can help you
+      </span>
+ </div>
+
+
+ <div class="card card-nav-tabs col-md-4 mr-auto ml-auto" >
+      <div class="h5 card-header card-header-info ">
+       Anxiety
+      </div>
+        <span>
+        Are panic, phobias and fears making your life seem smaller than it used to? We can help. Taking back life from anxiety is one of the main reasons people contact us.
+      </span> 
+</div>
+
+ <div class="card card-nav-tabs col-md-4" >
+      <div class="h5 card-header card-header-info">
+       Depression
+      </div>
+      <span>
+        Depression does not have to ruin your life. Managing your moods without medication is one of the most heavily researched areas of psychotherapy. Learn more about mood disorders here. DC Counseling
+      </span> 
+ </div>
+
+
+<div class="card card-nav-tabs col-md-4">
+      <div class="h5 card-header card-header-info">
+       Anger Management
+      </div>
+       <span>
+        We can help you go beyond traditional anger management techniques by helping you get to to the core cause of the anger. Read this article – from our Washington DC Counseling & Bethesda Counseling – to get a full perspective about anger.
+      </span> 
+ </div>
+
+     
+
+
+
+
+
+
+
+
+
+  <!--   <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#0" class="btn btn-primary">Go somewhere</a> -->
+  </div>
+ <!--  <div class="card-footer text-muted">
+    2 days ago
+  </div> -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <?php else: ?>
@@ -251,7 +366,7 @@
 
 
 
-      <div class="section section-contacts">
+      <!-- <div class="section section-contacts">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="text-center title">Work with us</h2>
@@ -287,7 +402,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 <?php endif; ?>
 <?php include 'footer.php'; ?>
